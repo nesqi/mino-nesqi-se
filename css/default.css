@@ -1,0 +1,83 @@
+body {
+    background-color: #DFDFDF;
+    color: black;
+    font-size: 16px;
+    margin: 0px auto 0px auto;
+    width: 100%;
+}
+
+div#page {
+    border: 20px solid #FFFFFF;
+    background-color: #FFFFFF;
+    max-width: 1000px;
+    margin: auto;
+    font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+div#header {
+    border-bottom: 2px solid black;
+    margin-bottom: 30px;
+    padding: 20px 0px 20px 0px;
+}
+
+div#title {
+    padding: 20px 20px 20px 0px;
+}
+
+div#top-image {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+}
+
+div#top-image img {
+    padding: 0px 0px 0px 0px;
+    margin: 0px 0px 0px 0px;
+    border: 0px 0px 0px 0px;
+}
+
+div#title-name {
+    font-size: 30px;
+}
+
+div#logo a {
+    color: black;
+    float: left;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+div#header #navigation {
+    background-color: black;
+}
+
+div#header #navigation a {
+    color: #FFFFFF;
+    font-size: 20px;
+    margin-left: 12px;
+    text-decoration: none;
+}
+
+div#footer {
+    border-top: solid 2px black;
+    color: #555;
+    font-size: 12px;
+    margin-top: 30px;
+    padding: 12px 0px 12px 0px;
+    text-align: right;
+}
+
+h1 {
+    font-size: 24px;
+}
+
+h2 {
+    font-size: 20px;
+}
+
+div.info {
+    color: #555;
+    font-size: 14px;
+    font-style: italic;
+}
