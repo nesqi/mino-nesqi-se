@@ -1,6 +1,10 @@
 ---
 title: Om mig
+image: /images/hundkex.jpg
 ---
+
+Om mig
+===
 
 Erfarenheter
 ---

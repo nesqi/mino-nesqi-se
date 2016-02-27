@@ -7,37 +7,42 @@ body {
 }
 
 div#page {
-    border: 20px solid #FFFFFF;
     background-color: #FFFFFF;
     max-width: 1000px;
     margin: auto;
     font: 15px "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
+div#top-margin {
+    border-bottom: 2px solid #999999;
+    margin-top: 30px;
+}
+
 div#header {
-    border-bottom: 2px solid black;
     margin-bottom: 30px;
-    padding: 20px 0px 20px 0px;
+    padding: 0px 0px 0px 0px;
 }
 
 div#title {
     padding: 20px 20px 20px 0px;
-}
-
-div#top-image {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    border: 0px 0px 0px 0px;
-}
-
-div#top-image img {
-    padding: 0px 0px 0px 0px;
-    margin: 0px 0px 0px 0px;
-    border: 0px 0px 0px 0px;
+    margin-left:   70px;
+    margin-top:    30px;
+    margin-bottom: 30px;
 }
 
 div#title-name {
     font-size: 30px;
+    font-weight: 700;
+}
+
+div#title-topic {
+    font-size: 15px;
+    font-weight: 300;
+    color: #7a7a7a;
+}
+
+div#top-image {
+    line-height: 0px;
 }
 
 div#logo a {
@@ -50,21 +55,31 @@ div#logo a {
 
 div#header #navigation {
     background-color: black;
+    border: 10px solid black;
 }
 
 div#header #navigation a {
     color: #FFFFFF;
-    font-size: 20px;
-    margin-left: 12px;
+    font-size: 15px;
     text-decoration: none;
+    padding-left: 30px;
+}
+
+div#content {
+    font-size: 15px;
+    margin-top: 50px;
+    margin-bottom: 150px;
+    margin-left: 150px;
+    margin-right: 150px;
 }
 
 div#footer {
-    border-top: solid 2px black;
+    border-top: 2px solid #dddddd;
+    background: #f9f9f9;
     color: #555;
     font-size: 12px;
     margin-top: 30px;
-    padding: 12px 0px 12px 0px;
+    padding: 12px 12px 12px 12px;
     text-align: right;
 }
 

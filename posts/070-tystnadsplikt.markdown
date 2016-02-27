@@ -1,7 +1,10 @@
 ---
 title: Tystnadsplikt
+image: /images/roda-vingar.jpg
 ---
-__Sekretess__ __och__  __tystnadsplikt__
+
+Sekretess och tystnadsplikt
+===
 
 Som legitimerad psykoterapeut har jag tystnadsplikt. Detta innebär att jag
 följer de etiska riktlinjer som finns för psykologer och psykoterapeuter, och

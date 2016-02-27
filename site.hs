@@ -14,7 +14,8 @@ main = hakyll $ do
 
     match "css/*" $ do
         route   idRoute
-        compile compressCssCompiler
+        compile copyFileCompiler
+        --compile compressCssCompiler
 
     match "**.markdown" $ version "metadata" $ do
         route $ setExtension "html"
@@ -26,8 +27,9 @@ main = hakyll $ do
             posts <- loadAll ("**.markdown" .&&. hasVersion "metadata")
 
             let postCtx = listField "posts" defaultContext (return posts) `mappend`
-                          constField "title" "Home"                `mappend`
-                          defaultContext
+                          defaultContext                                  `mappend`
+                          constField "title" "Home"                       `mappend`
+                          constField "image" "/images/vass.jpg"
 
             pandocCompiler >>= loadAndApplyTemplate "templates/default.html" postCtx
                            >>= relativizeUrls

@@ -1,6 +1,10 @@
 ---
 title: Varför psykoterapi
+image: /images/solros.jpg
 ---
+
+Varför psykoterapi
+===
 
 Vi människor har en tendens att tro att vi har god kännedom om oss själva.  En
 föreställning om våra personligheter stämmer dock inte alltid med verkligheten.
