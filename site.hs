@@ -25,14 +25,21 @@ main = hakyll $ do
         route $ setExtension "html"
         compile $ do
             posts <- loadAll ("**.markdown" .&&. hasVersion "metadata")
+            id <- getUnderlying
 
-            let postCtx = listField "posts" defaultContext (return posts) `mappend`
-                          defaultContext                                  `mappend`
-                          constField "title" "Home"                       `mappend`
+            let menuCtx = listField "posts" (defaultContext `mappend`
+                                             field "menu-class" (\item -> return $ if id == (setVersion Nothing $ itemIdentifier item)
+                                                                                   then "selected-menu" else "menu"))
+                                            (return posts)
+
+            let postCtx = menuCtx                   `mappend`
+                          defaultContext            `mappend`
+                          constField "title" "Home" `mappend`
                           constField "image" "/images/vass.jpg"
 
             pandocCompiler >>= loadAndApplyTemplate "templates/default.html" postCtx
                            >>= relativizeUrls
 
     match "templates/*" $ compile templateCompiler
+
 
